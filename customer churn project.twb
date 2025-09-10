@@ -1,0 +1,1104 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customer churn by contract' inline='true' name='federated.19247601k67vk118r5zn60m7i8nm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer churn by contract 2' name='textscan.1pawveo0fsnyfg1403mxe1070jgs'>
+            <connection class='textscan' directory='C:/Users/Admin/Downloads' filename='customer churn by contract 2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pawveo0fsnyfg1403mxe1070jgs' name='customer churn by contract 2.csv' table='[customer churn by contract 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+            <column datatype='string' name='contract' ordinal='0' />
+            <column datatype='integer' name='total_customers' ordinal='1' />
+            <column datatype='integer' name='churned_customers' ordinal='2' />
+            <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer churn by contract 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ZA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contract]</local-name>
+            <parent-name>[customer churn by contract 2.csv]</parent-name>
+            <remote-alias>contract</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_customers]</local-name>
+            <parent-name>[customer churn by contract 2.csv]</parent-name>
+            <remote-alias>total_customers</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churned_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churned_customers]</local-name>
+            <parent-name>[customer churn by contract 2.csv]</parent-name>
+            <remote-alias>churned_customers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_rate_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[churn_rate_percentage]</local-name>
+            <parent-name>[customer churn by contract 2.csv]</parent-name>
+            <remote-alias>churn_rate_percentage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='customer churn by contract 2.csv' datatype='table' name='[__tableau_internal_object_id__].[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]' role='measure' type='quantitative' />
+      <column caption='Churn Rate Percentage' datatype='real' name='[churn_rate_percentage]' role='measure' type='quantitative' />
+      <column caption='Churned Customers' datatype='integer' name='[churned_customers]' role='measure' type='quantitative' />
+      <column caption='Contract' datatype='string' name='[contract]' role='dimension' type='nominal' />
+      <column caption='Total Customers' datatype='integer' name='[total_customers]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0g4s6aa0twluw20zs50s41ue6d4b.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 02:18:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contract</remote-alias>
+              <ordinal>0</ordinal>
+              <family>customer churn by contract 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_customers</remote-alias>
+              <ordinal>1</ordinal>
+              <family>customer churn by contract 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churned_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churned_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churned_customers</remote-alias>
+              <ordinal>2</ordinal>
+              <family>customer churn by contract 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_rate_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[churn_rate_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn_rate_percentage</remote-alias>
+              <ordinal>3</ordinal>
+              <family>customer churn by contract 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;South Africa&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customer churn by contract 2.csv' id='customer churn by contract 2.csv_7023E93403D24212B9D794FCC60D70B1'>
+            <properties context=''>
+              <relation connection='textscan.1pawveo0fsnyfg1403mxe1070jgs' name='customer churn by contract 2.csv' table='[customer churn by contract 2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+                  <column datatype='string' name='contract' ordinal='0' />
+                  <column datatype='integer' name='total_customers' ordinal='1' />
+                  <column datatype='integer' name='churned_customers' ordinal='2' />
+                  <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='churn vs tenure 2' inline='true' name='federated.0etv1tm0c3q91s115udst1oevlwa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn vs tenure 2' name='textscan.15a78270fmw1rb0znoo6j1icu9nv'>
+            <connection class='textscan' directory='C:/Users/Admin/Downloads' filename='churn vs tenure 2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15a78270fmw1rb0znoo6j1icu9nv' name='churn vs tenure 2.csv' table='[churn vs tenure 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+            <column datatype='integer' name='tenure' ordinal='0' />
+            <column datatype='integer' name='total_customers' ordinal='1' />
+            <column datatype='integer' name='churned_customers' ordinal='2' />
+            <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn vs tenure 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ZA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[churn vs tenure 2.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_customers]</local-name>
+            <parent-name>[churn vs tenure 2.csv]</parent-name>
+            <remote-alias>total_customers</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churned_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churned_customers]</local-name>
+            <parent-name>[churn vs tenure 2.csv]</parent-name>
+            <remote-alias>churned_customers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_rate_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[churn_rate_percentage]</local-name>
+            <parent-name>[churn vs tenure 2.csv]</parent-name>
+            <remote-alias>churn_rate_percentage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='churn vs tenure 2.csv' datatype='table' name='[__tableau_internal_object_id__].[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]' role='measure' type='quantitative' />
+      <column caption='Churn Rate Percentage' datatype='real' name='[churn_rate_percentage]' role='measure' type='quantitative' />
+      <column caption='Churned Customers' datatype='integer' name='[churned_customers]' role='measure' type='quantitative' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column caption='Total Customers' datatype='integer' name='[total_customers]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0cpvhq612hjzjn0zynit113fo9g8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 02:37:25 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn vs tenure 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_customers</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn vs tenure 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churned_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churned_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churned_customers</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn vs tenure 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_rate_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[churn_rate_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn_rate_percentage</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn vs tenure 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;South Africa&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='churn vs tenure 2.csv' id='churn vs tenure 2.csv_493BC40A7CAA476CBC8C340E8B4395DD'>
+            <properties context=''>
+              <relation connection='textscan.15a78270fmw1rb0znoo6j1icu9nv' name='churn vs tenure 2.csv' table='[churn vs tenure 2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+                  <column datatype='integer' name='tenure' ordinal='0' />
+                  <column datatype='integer' name='total_customers' ordinal='1' />
+                  <column datatype='integer' name='churned_customers' ordinal='2' />
+                  <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='churn vs payment method 2' inline='true' name='federated.1sk3txd14fmsur1608jiw10euxik' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn vs payment method 2' name='textscan.0se6c2v1kndxnn1d6go6o1hhsf53'>
+            <connection class='textscan' directory='C:/Users/Admin/Downloads' filename='churn vs payment method 2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0se6c2v1kndxnn1d6go6o1hhsf53' name='churn vs payment method 2.csv' table='[churn vs payment method 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+            <column datatype='string' name='PaymentMethod' ordinal='0' />
+            <column datatype='integer' name='total_customers' ordinal='1' />
+            <column datatype='integer' name='churned_customers' ordinal='2' />
+            <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn vs payment method 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ZA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[churn vs payment method 2.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_customers]</local-name>
+            <parent-name>[churn vs payment method 2.csv]</parent-name>
+            <remote-alias>total_customers</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churned_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churned_customers]</local-name>
+            <parent-name>[churn vs payment method 2.csv]</parent-name>
+            <remote-alias>churned_customers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_rate_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[churn_rate_percentage]</local-name>
+            <parent-name>[churn vs payment method 2.csv]</parent-name>
+            <remote-alias>churn_rate_percentage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='churn vs payment method 2.csv' datatype='table' name='[__tableau_internal_object_id__].[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]' role='measure' type='quantitative' />
+      <column caption='Churn Rate Percentage' datatype='real' name='[churn_rate_percentage]' role='measure' type='quantitative' />
+      <column caption='Churned Customers' datatype='integer' name='[churned_customers]' role='measure' type='quantitative' />
+      <column caption='Total Customers' datatype='integer' name='[total_customers]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_014e0ge1ivbi2o1eq3tba1oaxigq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 02:51:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn vs payment method 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_customers</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn vs payment method 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churned_customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churned_customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churned_customers</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn vs payment method 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_rate_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[churn_rate_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn_rate_percentage</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn vs payment method 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;South Africa&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='churn vs payment method 2.csv' id='churn vs payment method 2.csv_C4E336FC8D5446B0A4F41208A933847F'>
+            <properties context=''>
+              <relation connection='textscan.0se6c2v1kndxnn1d6go6o1hhsf53' name='churn vs payment method 2.csv' table='[churn vs payment method 2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ZA' separator=';'>
+                  <column datatype='string' name='PaymentMethod' ordinal='0' />
+                  <column datatype='integer' name='total_customers' ordinal='1' />
+                  <column datatype='integer' name='churned_customers' ordinal='2' />
+                  <column datatype='real' name='churn_rate_percentage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>churn categorised by contract type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer churn by contract' name='federated.19247601k67vk118r5zn60m7i8nm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19247601k67vk118r5zn60m7i8nm'>
+            <column caption='Churned Customers' datatype='integer' name='[churned_customers]' role='measure' type='quantitative' />
+            <column caption='Contract' datatype='string' name='[contract]' role='dimension' type='nominal' />
+            <column-instance column='[contract]' derivation='None' name='[none:contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[churned_customers]' derivation='Sum' name='[sum:churned_customers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.21889503300189972' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19247601k67vk118r5zn60m7i8nm].[sum:churned_customers:qk]</rows>
+        <cols>[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]</cols>
+      </table>
+      <simple-id uuid='{C266E5EF-04F8-439A-ABED-C30672C64C14}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>churn categorised by payment method</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn vs payment method 2' name='federated.1sk3txd14fmsur1608jiw10euxik' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sk3txd14fmsur1608jiw10euxik'>
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <column caption='Churn Rate Percentage' datatype='real' name='[churn_rate_percentage]' role='measure' type='quantitative' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+            <column-instance column='[churn_rate_percentage]' derivation='Sum' name='[sum:churn_rate_percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]' />
+              <wedge-size column='[federated.1sk3txd14fmsur1608jiw10euxik].[sum:churn_rate_percentage:qk]' />
+              <text column='[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]' />
+              <text column='[federated.1sk3txd14fmsur1608jiw10euxik].[sum:churn_rate_percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8350828886032104' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AFFD0176-BF83-44CC-972C-CE3F6F642859}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>percentage rate of churn categorised by contract type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer churn by contract' name='federated.19247601k67vk118r5zn60m7i8nm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19247601k67vk118r5zn60m7i8nm'>
+            <column caption='Churn Rate Percentage' datatype='real' name='[churn_rate_percentage]' role='measure' type='quantitative' />
+            <column caption='Contract' datatype='string' name='[contract]' role='dimension' type='nominal' />
+            <column-instance column='[contract]' derivation='None' name='[none:contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[churn_rate_percentage]' derivation='Sum' name='[sum:churn_rate_percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]' />
+              <wedge-size column='[federated.19247601k67vk118r5zn60m7i8nm].[sum:churn_rate_percentage:qk]' />
+              <text column='[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D1F16D5E-BF86-4076-BF17-AF49488440D9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='8' param='horz' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='98148' id='6' type-v2='layout-basic' w='99064' x='468' y='926'>
+              <zone h='49074' id='3' name='Sheet 1' w='49528' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='5' name='Sheet 3' w='99064' x='468' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='10' name='Sheet 4' w='49536' x='49996' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='11' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+                <zone fixed-size='280' h='49074' id='5' is-fixed='true' name='Sheet 3' w='99064' x='468' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='3' is-fixed='true' name='Sheet 1' w='49528' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='10' is-fixed='true' name='Sheet 4' w='49536' x='49996' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BD67416D-61CE-478F-912D-67FAB7BDCF8C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19247601k67vk118r5zn60m7i8nm].[none:contract,total:nk]</field>
+            <field>[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]</field>
+            <field>[federated.19247601k67vk118r5zn60m7i8nm].[none:rate:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2BE6BE88-A1D0-476B-879E-8A7224EDE245}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2C1B529B-A793-491C-A3E5-B917E2AB1193}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]</field>
+            <field>[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{90294CF3-4844-4394-8863-B82946551DA9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='fit-width' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1sk3txd14fmsur1608jiw10euxik].[none:PaymentMethod:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='fit-width' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.19247601k67vk118r5zn60m7i8nm].[none:contract:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{53587AD4-DAD2-4501-9648-58A5244EF58B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='164' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACkCAYAAADBuSFLAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABzElEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA2gfexgVEirsx8QAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
